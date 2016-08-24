@@ -28,6 +28,12 @@ $(shell rm -rf $(OUT)/obj/KERNEL_OBJ; \
 # copy the prebuilt kernel 
 $(shell cp $(TARGET_PREBUILT_KERNEL) $(OUT)/kernel)
 
+
+#copy the kernel modules
+$(shell rm -rf $(OUT)/system/lib; \
+	mkdir -p $(OUT)/system/lib; \
+	cp -rp $(LOCAL_PATH)/modules $(OUT)/system/lib/)
+
 # hack for twrp
 TARGET_CUSTOM_KERNEL_HEADERS := $(OUT)/obj/KERNEL_OBJ/usr/include
 
