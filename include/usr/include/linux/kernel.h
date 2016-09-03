@@ -10,7 +10,4 @@
 #define __ALIGN_KERNEL_MASK(x, mask)	(((x) + (mask)) & ~(mask))
 
 
-/* To identify board information in panic logs, set this */
-extern char *mach_panic_string;
-
 #endif
