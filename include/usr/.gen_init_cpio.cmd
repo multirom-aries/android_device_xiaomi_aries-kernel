@@ -1,6 +1,6 @@
-cmd_usr/gen_init_cpio := gcc -Wp,-MD,usr/.gen_init_cpio.d -Iusr -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -o usr/gen_init_cpio /opt/mokee/kernel/xiaomi/aries/usr/gen_init_cpio.c  
+cmd_usr/gen_init_cpio := gcc -Wp,-MD,usr/.gen_init_cpio.d -Iusr -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -o usr/gen_init_cpio /opt/cm-14.0/kernel/xiaomi/aries/usr/gen_init_cpio.c  
 
-source_usr/gen_init_cpio := /opt/mokee/kernel/xiaomi/aries/usr/gen_init_cpio.c
+source_usr/gen_init_cpio := /opt/cm-14.0/kernel/xiaomi/aries/usr/gen_init_cpio.c
 
 deps_usr/gen_init_cpio := \
   /usr/include/stdc-predef.h \
